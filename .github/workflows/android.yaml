@@ -1,14 +1,11 @@
-# Build Android version of the app
-
-name: Android
+name: Android Build
 
 on:
   workflow_dispatch:
   push:
     branches: [ master ]
-  push:
-    branches:
-      - master
+    tags:
+      - 'v*'
   
 jobs:
 
